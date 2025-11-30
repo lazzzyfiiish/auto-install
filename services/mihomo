@@ -4,6 +4,7 @@ Description=mihomo Daemon, Another Clash Kernel.
 After=network.target NetworkManager.service systemd-networkd.service iwd.service
 
 [Service]
+User=root
 Type=simple
 LimitNPROC=500
 LimitNOFILE=1000000
