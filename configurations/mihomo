@@ -1,0 +1,74 @@
+read -p "YOUR KEY: " KUNKEY
+wget "https://2gq4z.no-mad-world.club/link/KNVTb5EqXPq$KUNKEY?clash=3&extend=1" -O ikun.yaml
+IKUN=ikun.yaml
+
+
+# Delete
+sed -i '/免费\|台湾\|阿根廷\|俄罗斯\|土耳其\|韩国\|印度\|德国\|法国\|乌克兰/d' $IKUN
+sed -i '/unified-delay:/,$!d' $IKUN 
+# sed -i '/^rules:/,$d' $IKUN && echo "Deleted Rules"
+
+# Replace
+sed -i 's/ | IEPL//g; s/ | 下载专用//g' $IKUN
+sed -i 's/香港/HongKong/g; s/日本/Japan/g; s/新加坡/Singapore/g; s/美国/America/g; s/英国/England/g; s/澳大利亚/Australia/g; s/加拿大/Canada/g' $IKUN
+
+# Insert&Append
+sed -i '1i\
+dns:\
+  enable: true\
+  use-hosts: true\
+  nameserver:\
+    - 119.29.29.29\
+    - 223.5.5.5\
+    - 223.6.6.6\
+    - tcp://223.5.5.5\
+    - tcp://223.6.6.6\
+    - tls://dns.google:853\
+    - tls://8.8.8.8:853\
+    - tls://8.8.4.4:853\
+    - tls://dns.alidns.com\
+    - tls://223.5.5.5\
+    - tls://223.6.6.6\
+    - tls://dot.pub\
+    - tls://1.12.12.12\
+    - tls://120.53.53.53\
+    - https://dns.google/dns-query\
+    - https://8.8.8.8/dns-query\
+    - https://8.8.4.4/dns-query\
+    - https://dns.alidns.com/dns-query\
+    - https://223.5.5.5/dns-query\
+    - https://223.6.6.6/dns-query\
+    - https://doh.pub/dns-query\
+    - https://1.12.12.12/dns-query\
+    - https://120.53.53.53/dns-query\
+  default-nameserver:\
+    - 119.29.29.29\
+    - 223.5.5.5\
+    - 223.6.6.6\
+    - tcp://119.29.29.29\
+    - tcp://223.5.5.5\
+    - tcp://223.6.6.6\
+\
+tun:\
+  enable: true\
+  stack: mixed\
+  auto-route: true\
+  auto-redirect: true\
+  auto-detect-interface: true\
+  dns-hijack:\
+    - any:53\
+    - tcp://any:53\
+  device: tun0\
+  strict-route: true\
+\
+mixed-port: 7890\
+ipv6: true\
+allow-lan: true\
+mode: Rule\
+log-level: info\
+external-controller: 0.0.0.0:9090\
+external-ui: ./ui' $IKUN
+
+
+sudo mkdir /etc/mihomo
+sudo mv $IKUN /etc/mihomo
