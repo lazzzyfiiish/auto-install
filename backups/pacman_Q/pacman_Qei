@@ -1,0 +1,452 @@
+Name            : base
+Version         : 3-2
+Description     : Minimal package set to define a basic Arch Linux installation
+Architecture    : any
+URL             : https://www.archlinux.org
+Licenses        : GPL
+Groups          : None
+Provides        : None
+Depends On      : filesystem  gcc-libs  glibc  bash  coreutils  file  findutils  gawk  grep  procps-ng  sed  tar  gettext  pciutils  psmisc  shadow  util-linux  bzip2  gzip  xz  licenses  pacman  archlinux-keyring  systemd  systemd-sysvcompat  iputils  iproute2
+Optional Deps   : linux: bare metal support [installed]
+Required By     : None
+Optional For    : None
+Conflicts With  : None
+Replaces        : None
+Installed Size  : 0.00 B
+Packager        : Jan Alexander Steffens (heftig) <heftig@archlinux.org>
+Build Date      : Sun 08 Oct 2023 09:15:41 AM CST
+Install Date    : Mon 01 Dec 2025 12:05:22 AM CST
+Install Reason  : Explicitly installed
+Install Script  : No
+Validated By    : Signature
+
+Name            : base-devel
+Version         : 1-2
+Description     : Basic tools to build Arch Linux packages
+Architecture    : any
+URL             : https://www.archlinux.org
+Licenses        : GPL
+Groups          : None
+Provides        : None
+Depends On      : archlinux-keyring  autoconf  automake  binutils  bison  debugedit  fakeroot  file  findutils  flex  gawk  gcc  gettext  grep  groff  gzip  libtool  m4  make  pacman  patch  pkgconf  sed  sudo  texinfo  which
+Optional Deps   : None
+Required By     : None
+Optional For    : pacman
+Conflicts With  : None
+Replaces        : None
+Installed Size  : 0.00 B
+Packager        : Antonio Rojas <arojas@archlinux.org>
+Build Date      : Sat 07 Sep 2024 03:08:35 AM CST
+Install Date    : Mon 01 Dec 2025 12:05:24 AM CST
+Install Reason  : Explicitly installed
+Install Script  : No
+Validated By    : Signature
+
+Name            : bluez
+Version         : 5.85-1
+Description     : Daemons for the bluetooth protocol stack
+Architecture    : x86_64
+URL             : http://www.bluez.org/
+Licenses        : GPL-2.0-only
+Groups          : None
+Provides        : None
+Depends On      : systemd-libs  dbus  glib2  alsa-lib  glibc
+Optional Deps   : None
+Required By     : None
+Optional For    : networkmanager
+Conflicts With  : None
+Replaces        : None
+Installed Size  : 1495.97 KiB
+Packager        : Robin Candau <antiz@archlinux.org>
+Build Date      : Sat 22 Nov 2025 01:46:50 AM CST
+Install Date    : Mon 01 Dec 2025 12:06:01 AM CST
+Install Reason  : Explicitly installed
+Install Script  : No
+Validated By    : Signature
+
+Name            : bluez-utils
+Version         : 5.85-1
+Description     : Development and debugging utilities for the bluetooth protocol stack
+Architecture    : x86_64
+URL             : http://www.bluez.org/
+Licenses        : GPL-2.0-only
+Groups          : None
+Provides        : bluez-plugins
+Depends On      : dbus  systemd-libs  glib2  glibc  readline
+Optional Deps   : ell: for btpclient
+Required By     : None
+Optional For    : None
+Conflicts With  : None
+Replaces        : bluez-plugins
+Installed Size  : 3.46 MiB
+Packager        : Robin Candau <antiz@archlinux.org>
+Build Date      : Sat 22 Nov 2025 01:46:50 AM CST
+Install Date    : Mon 01 Dec 2025 12:06:01 AM CST
+Install Reason  : Explicitly installed
+Install Script  : No
+Validated By    : Signature
+
+Name            : btrfs-progs
+Version         : 6.17.1-1
+Description     : Btrfs filesystem utilities
+Architecture    : x86_64
+URL             : https://btrfs.readthedocs.io
+Licenses        : GPL-2.0-only
+Groups          : None
+Provides        : btrfs-progs-unstable
+Depends On      : glibc  libgcrypt  lzo  systemd-libs  util-linux-libs  zlib  zstd
+Optional Deps   : python: libbtrfsutil python bindings
+                  e2fsprogs: btrfs-convert [installed]
+Required By     : snapper
+Optional For    : None
+Conflicts With  : btrfs-progs-unstable
+Replaces        : btrfs-progs-unstable
+Installed Size  : 6.60 MiB
+Packager        : Tobias Powalowski <tpowa@archlinux.org>
+Build Date      : Sat 08 Nov 2025 01:02:40 AM CST
+Install Date    : Mon 01 Dec 2025 12:05:25 AM CST
+Install Reason  : Explicitly installed
+Install Script  : Yes
+Validated By    : Signature
+
+Name            : efibootmgr
+Version         : 18-3
+Description     : Linux user-space application to modify the EFI Boot Manager
+Architecture    : x86_64
+URL             : https://github.com/rhboot/efibootmgr
+Licenses        : GPL-2.0-or-later
+Groups          : None
+Provides        : None
+Depends On      : glibc  popt  efivar  libefiboot.so=1-64  libefivar.so=1-64
+Optional Deps   : None
+Required By     : None
+Optional For    : None
+Conflicts With  : None
+Replaces        : None
+Installed Size  : 83.71 KiB
+Packager        : David Runge <dvzrv@archlinux.org>
+Build Date      : Wed 13 Mar 2024 05:47:21 PM CST
+Install Date    : Mon 01 Dec 2025 12:05:56 AM CST
+Install Reason  : Explicitly installed
+Install Script  : No
+Validated By    : Signature
+
+Name            : gst-plugin-pipewire
+Version         : 1:1.4.9-1
+Description     : Multimedia graph framework - pipewire plugin
+Architecture    : x86_64
+URL             : https://pipewire.org
+Licenses        : MIT
+Groups          : None
+Provides        : None
+Depends On      : libpipewire=1:1.4.9-1  libpipewire-0.3.so=0-64  pipewire-audio=1:1.4.9-1  pipewire=1:1.4.9-1  gcc-libs  glib2  libglib-2.0.so=0-64  libgobject-2.0.so=0-64  glibc  gst-plugins-base-libs  gstreamer  pipewire-session-manager
+Optional Deps   : None
+Required By     : None
+Optional For    : pipewire
+Conflicts With  : None
+Replaces        : None
+Installed Size  : 155.38 KiB
+Packager        : Jan Alexander Steffens (heftig) <heftig@archlinux.org>
+Build Date      : Thu 09 Oct 2025 07:36:57 PM CST
+Install Date    : Mon 01 Dec 2025 12:06:09 AM CST
+Install Reason  : Explicitly installed
+Install Script  : No
+Validated By    : Signature
+
+Name            : intel-ucode
+Version         : 20251111-1
+Description     : Microcode update files for Intel CPUs
+Architecture    : any
+URL             : https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files
+Licenses        : custom
+Groups          : None
+Provides        : None
+Depends On      : None
+Optional Deps   : None
+Required By     : None
+Optional For    : None
+Conflicts With  : None
+Replaces        : microcode_ctl
+Installed Size  : 30.18 MiB
+Packager        : T.J. Townsend <blakkheim@archlinux.org>
+Build Date      : Wed 12 Nov 2025 02:07:40 AM CST
+Install Date    : Mon 01 Dec 2025 12:05:25 AM CST
+Install Reason  : Explicitly installed
+Install Script  : No
+Validated By    : Signature
+
+Name            : libpulse
+Version         : 17.0+r93+gbe2efb69b-1
+Description     : A featureful, general-purpose sound server (client library)
+Architecture    : x86_64
+URL             : https://www.freedesktop.org/wiki/Software/PulseAudio/
+Licenses        : LGPL-2.1-or-later
+Groups          : None
+Provides        : libpulse-mainloop-glib.so=0-64  libpulse-simple.so=0-64  libpulse.so=0-64
+Depends On      : bash  dbus  glib2  glibc  libasyncns  libsndfile  libxcb  systemd-libs
+Optional Deps   : pulse-native-provider: PulseAudio backend [installed]
+Required By     : pipewire-pulse
+Optional For    : mpg123
+Conflicts With  : None
+Replaces        : None
+Installed Size  : 1499.32 KiB
+Packager        : Jan Alexander Steffens (heftig) <heftig@archlinux.org>
+Build Date      : Tue 11 Nov 2025 08:41:56 AM CST
+Install Date    : Mon 01 Dec 2025 12:06:08 AM CST
+Install Reason  : Explicitly installed
+Install Script  : No
+Validated By    : Signature
+
+Name            : linux
+Version         : 6.17.9.arch1-1
+Description     : The Linux kernel and modules
+Architecture    : x86_64
+URL             : https://github.com/archlinux/linux
+Licenses        : GPL-2.0-only
+Groups          : None
+Provides        : KSMBD-MODULE  NTSYNC-MODULE  VIRTUALBOX-GUEST-MODULES  WIREGUARD-MODULE
+Depends On      : coreutils  initramfs  kmod
+Optional Deps   : linux-firmware: firmware images needed for some devices [installed]
+                  scx-scheds: to use sched-ext schedulers
+                  wireless-regdb: to set the correct wireless channels of your country
+Required By     : None
+Optional For    : base
+Conflicts With  : None
+Replaces        : virtualbox-guest-modules-arch  wireguard-arch
+Installed Size  : 143.26 MiB
+Packager        : Jan Alexander Steffens (heftig) <heftig@archlinux.org>
+Build Date      : Mon 24 Nov 2025 11:21:09 PM CST
+Install Date    : Mon 01 Dec 2025 12:05:25 AM CST
+Install Reason  : Explicitly installed
+Install Script  : No
+Validated By    : Signature
+
+Name            : linux-firmware
+Version         : 20251125-1
+Description     : Firmware files for Linux - Default set
+Architecture    : any
+URL             : https://gitlab.com/kernel-firmware/linux-firmware
+Licenses        : CC0-1.0
+Groups          : None
+Provides        : None
+Depends On      : linux-firmware-amdgpu  linux-firmware-atheros  linux-firmware-broadcom  linux-firmware-cirrus  linux-firmware-intel  linux-firmware-mediatek  linux-firmware-nvidia  linux-firmware-other  linux-firmware-radeon  linux-firmware-realtek
+Optional Deps   : linux-firmware-liquidio: Firmware for Cavium LiquidIO server adapters
+                  linux-firmware-marvell: Firmware for Marvell devices
+                  linux-firmware-mellanox: Firmware for Mellanox Spectrum switches
+                  linux-firmware-nfp: Firmware for Netronome Flow Processors
+                  linux-firmware-qcom: Firmware for Qualcomm SoCs
+                  linux-firmware-qlogic: Firmware for QLogic devices
+Required By     : None
+Optional For    : linux
+Conflicts With  : None
+Replaces        : None
+Installed Size  : 0.00 B
+Packager        : Jan Alexander Steffens (heftig) <heftig@archlinux.org>
+Build Date      : Wed 26 Nov 2025 06:18:32 AM CST
+Install Date    : Mon 01 Dec 2025 12:05:25 AM CST
+Install Reason  : Explicitly installed
+Install Script  : No
+Validated By    : Signature
+
+Name            : networkmanager
+Version         : 1.54.2-1
+Description     : Network connection manager and user applications
+Architecture    : x86_64
+URL             : https://networkmanager.dev/
+Licenses        : LGPL-2.1-or-later  GPL-2.0-or-later
+Groups          : None
+Provides        : None
+Depends On      : audit  curl  gcc-libs  glib2  glibc  iproute2  jansson  libmm-glib  libndp  libnewt  libnm  libnvme  libpsl  libteam  mobile-broadband-provider-info  nspr  nss  readline  systemd-libs  wpa_supplicant
+Optional Deps   : bluez: Bluetooth support [installed]
+                  dhcpcd: alternative DHCP client
+                  dnsmasq: connection sharing
+                  firewalld: firewall support
+                  iptables: connection sharing [installed]
+                  iwd: wpa_supplicant alternative
+                  modemmanager: cellular network support
+                  nftables: connection sharing
+                  openresolv: alternative resolv.conf manager
+                  pacrunner: PAC proxy support
+                  polkit: let non-root users control networking [installed]
+                  ppp: dialup connection support
+Required By     : None
+Optional For    : None
+Conflicts With  : None
+Replaces        : None
+Installed Size  : 15.37 MiB
+Packager        : Jan Alexander Steffens (heftig) <heftig@archlinux.org>
+Build Date      : Tue 18 Nov 2025 12:58:26 AM CST
+Install Date    : Mon 01 Dec 2025 12:05:59 AM CST
+Install Reason  : Explicitly installed
+Install Script  : No
+Validated By    : Signature
+
+Name            : pipewire
+Version         : 1:1.4.9-1
+Description     : Low-latency audio/video router and processor
+Architecture    : x86_64
+URL             : https://pipewire.org
+Licenses        : MIT  LGPL-2.1-or-later
+Groups          : None
+Provides        : None
+Depends On      : libpipewire=1:1.4.9-1  libpipewire-0.3.so=0-64  dbus  libdbus-1.so=3-64  gcc-libs  glib2  libglib-2.0.so=0-64  glibc  ncurses  libncursesw.so=6-64  readline  libreadline.so=8-64  systemd-libs  libsystemd.so=0-64  libudev.so=1-64
+Optional Deps   : gst-plugin-pipewire: GStreamer plugin [installed]
+                  pipewire-alsa: ALSA configuration [installed]
+                  pipewire-audio: Audio support [installed]
+                  pipewire-docs: Documentation
+                  pipewire-ffado: FireWire support
+                  pipewire-jack-client: PipeWire as JACK client
+                  pipewire-jack: JACK replacement [installed]
+                  pipewire-libcamera: Libcamera support
+                  pipewire-pulse: PulseAudio replacement [installed]
+                  pipewire-roc: ROC streaming
+                  pipewire-session-manager: Session manager [installed]
+                  pipewire-v4l2: V4L2 interceptor
+                  pipewire-x11-bell: X11 bell
+                  pipewire-zeroconf: Zeroconf support
+                  realtime-privileges: realtime privileges with rt module
+                  rtkit: realtime privileges with rtkit module
+Required By     : gst-plugin-pipewire  pipewire-alsa  pipewire-audio  pipewire-jack  pipewire-pulse  wireplumber
+Optional For    : None
+Conflicts With  : None
+Replaces        : None
+Installed Size  : 2.83 MiB
+Packager        : Jan Alexander Steffens (heftig) <heftig@archlinux.org>
+Build Date      : Thu 09 Oct 2025 07:36:57 PM CST
+Install Date    : Mon 01 Dec 2025 12:06:08 AM CST
+Install Reason  : Explicitly installed
+Install Script  : Yes
+Validated By    : Signature
+
+Name            : pipewire-alsa
+Version         : 1:1.4.9-1
+Description     : Low-latency audio/video router and processor - ALSA configuration
+Architecture    : x86_64
+URL             : https://pipewire.org
+Licenses        : MIT
+Groups          : None
+Provides        : None
+Depends On      : pipewire-audio=1:1.4.9-1  pipewire=1:1.4.9-1  pipewire-session-manager
+Optional Deps   : None
+Required By     : None
+Optional For    : pipewire
+Conflicts With  : None
+Replaces        : None
+Installed Size  : 1218.00 B
+Packager        : Jan Alexander Steffens (heftig) <heftig@archlinux.org>
+Build Date      : Thu 09 Oct 2025 07:36:57 PM CST
+Install Date    : Mon 01 Dec 2025 12:06:08 AM CST
+Install Reason  : Explicitly installed
+Install Script  : No
+Validated By    : Signature
+
+Name            : pipewire-jack
+Version         : 1:1.4.9-1
+Description     : Low-latency audio/video router and processor - JACK replacement
+Architecture    : x86_64
+URL             : https://pipewire.org
+Licenses        : MIT  GPL-2.0-only  LGPL-2.1-or-later
+Groups          : None
+Provides        : jack  libjack.so=0-64  libjacknet.so=0-64  libjackserver.so=0-64
+Depends On      : libpipewire=1:1.4.9-1  libpipewire-0.3.so=0-64  pipewire-audio=1:1.4.9-1  pipewire=1:1.4.9-1  glibc  pipewire-session-manager  sh
+Optional Deps   : jack-example-tools: for official JACK example-clients and tools
+Required By     : None
+Optional For    : mpg123  pipewire
+Conflicts With  : jack  jack2  pipewire-jack-client
+Replaces        : None
+Installed Size  : 685.04 KiB
+Packager        : Jan Alexander Steffens (heftig) <heftig@archlinux.org>
+Build Date      : Thu 09 Oct 2025 07:36:57 PM CST
+Install Date    : Mon 01 Dec 2025 12:06:08 AM CST
+Install Reason  : Explicitly installed
+Install Script  : No
+Validated By    : Signature
+
+Name            : pipewire-pulse
+Version         : 1:1.4.9-1
+Description     : Low-latency audio/video router and processor - PulseAudio replacement
+Architecture    : x86_64
+URL             : https://pipewire.org
+Licenses        : MIT
+Groups          : None
+Provides        : pulse-native-provider
+Depends On      : libpipewire=1:1.4.9-1  libpipewire-0.3.so=0-64  pipewire-audio=1:1.4.9-1  pipewire=1:1.4.9-1  avahi  libavahi-client.so=3-64  libavahi-common.so=3-64  dbus  libdbus-1.so=3-64  dconf  gcc-libs  glib2  libglib-2.0.so=0-64  libgobject-2.0.so=0-64  libgio-2.0.so=0-64  glibc  libpulse  libpulse.so=0-64  pipewire-session-manager  systemd-libs  libsystemd.so=0-64
+Optional Deps   : None
+Required By     : None
+Optional For    : libpulse  pipewire
+Conflicts With  : pulseaudio
+Replaces        : None
+Installed Size  : 513.62 KiB
+Packager        : Jan Alexander Steffens (heftig) <heftig@archlinux.org>
+Build Date      : Thu 09 Oct 2025 07:36:57 PM CST
+Install Date    : Mon 01 Dec 2025 12:06:08 AM CST
+Install Reason  : Explicitly installed
+Install Script  : Yes
+Validated By    : Signature
+
+Name            : snapper
+Version         : 0.13.0-2
+Description     : A tool for managing BTRFS and LVM snapshots
+Architecture    : x86_64
+URL             : http://snapper.io
+Licenses        : GPL-2.0-only
+Groups          : None
+Provides        : None
+Depends On      : btrfs-progs  libxml2  dbus  boost-libs  acl  json-c
+Optional Deps   : pam: pam_snapper [installed]
+Required By     : None
+Optional For    : None
+Conflicts With  : None
+Replaces        : None
+Installed Size  : 3.42 MiB
+Packager        : Massimiliano Torromeo <mtorromeo@archlinux.org>
+Build Date      : Fri 17 Oct 2025 03:21:54 AM CST
+Install Date    : Mon 01 Dec 2025 12:06:11 AM CST
+Install Reason  : Explicitly installed
+Install Script  : No
+Validated By    : Signature
+
+Name            : wireplumber
+Version         : 0.5.12-1
+Description     : Session / policy manager implementation for PipeWire
+Architecture    : x86_64
+URL             : https://pipewire.pages.freedesktop.org/wireplumber/
+Licenses        : MIT
+Groups          : None
+Provides        : pipewire-session-manager
+Depends On      : libwireplumber=0.5.12-1  gcc-libs  glibc  libglib-2.0.so=0-64  libgobject-2.0.so=0-64  libgio-2.0.so=0-64  libpipewire  libpipewire-0.3.so=0-64  libsystemd.so=0-64  lua  pipewire  systemd-libs
+Optional Deps   : wireplumber-docs: Documentation
+Required By     : gst-plugin-pipewire  pipewire-alsa  pipewire-jack  pipewire-pulse
+Optional For    : pipewire
+Conflicts With  : pipewire-media-session
+Replaces        : None
+Installed Size  : 1119.58 KiB
+Packager        : Jan Alexander Steffens (heftig) <heftig@archlinux.org>
+Build Date      : Fri 10 Oct 2025 11:47:04 PM CST
+Install Date    : Mon 01 Dec 2025 12:06:08 AM CST
+Install Reason  : Explicitly installed
+Install Script  : Yes
+Validated By    : Signature
+
+Name            : zram-generator
+Version         : 1.2.1-1
+Description     : Systemd unit generator for zram devices
+Architecture    : x86_64
+URL             : https://github.com/systemd/zram-generator
+Licenses        : MIT
+Groups          : None
+Provides        : None
+Depends On      : systemd
+Optional Deps   : None
+Required By     : None
+Optional For    : None
+Conflicts With  : None
+Replaces        : None
+Installed Size  : 767.73 KiB
+Packager        : Christian Hesse <eworm@archlinux.org>
+Build Date      : Mon 09 Dec 2024 05:10:58 PM CST
+Install Date    : Mon 01 Dec 2025 12:05:55 AM CST
+Install Reason  : Explicitly installed
+Install Script  : No
+Validated By    : Signature
+

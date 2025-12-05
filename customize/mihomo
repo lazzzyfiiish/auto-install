@@ -1,3 +1,4 @@
+#!/bin/bash
 read -p "YOUR KEY: " KUNKEY
 wget "https://2gq4z.no-mad-world.club/link/KNVTb5EqXPq$KUNKEY?clash=3&extend=1" -O ikun.yaml
 IKUN=ikun.yaml
@@ -41,3 +42,6 @@ sudo mv $IKUN /etc/mihomo/config.yaml
 
 sudo wget -O Country.mmdb https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country.mmdb
 sudo mv Country.mmdb /etc/mihomo
+
+
+bash ./services/mihomo
