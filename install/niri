@@ -1,2 +1,2 @@
-paru -S ly niri kitty xwayland-satellite \
+paru -S ly xdg-desktop-portal-gtk niri kitty xwayland-satellite \
 noctalia-shell cliphist matugen cava wlsunset power-profiles-daemon ddcutil 

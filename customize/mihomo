@@ -59,7 +59,8 @@ dns:\
     - tls://223.6.6.6\
     - tls://dot.pub\
     - tls://1.12.12.12\
-    - tls://120.53.53.53\' $IKUN
+    - tls://120.53.53.53\
+' $IKUN
 
 
 sudo mkdir /etc/mihomo

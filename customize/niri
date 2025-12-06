@@ -3,7 +3,7 @@ NIRI=$HOME/.config/niri/config.kdl
 
 # Delete
 sed -i '/^\s*\/\//d' "$@" $NIRI  # Delete comments
-sed -i 's/Mod+D/d' $NIRI # Delete Mod+D
+sed -i 's/fuzzel/d' $NIRI # Delete Mod+D
 
 # Insert & Append
 sed -i '/output "eDP-1"/i\
